@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2048 game</title>
+
+	<!-- ##### - CSS -->	
+	<!-- PERSONNEL -->
+	<link rel="stylesheet" href="style.css">	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap" rel="stylesheet">
+
+	<!-- ##### - JAVASCRIPT -->
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />	
+  	<!-- PERSONNEL -->
+	  <script src="rush.js"></script>
+
+</head>
+<body>
+	<div id="ex1" class="modal">
+		<p>HOW TO PLAY: Use your arrow keys to move the tiles.<br />
+			When two tiles with the same number touch, they merge into one!</p>
+	</div>
+
+	<div id="ex2" class="modal win_modal">
+		<img src="./assets/win.png" style="width:inherit"/>
+	</div>
+
+	<div id="game">
+		<div class="game_container">
+			<div id="title"></div>
+			<div id="info_div">
+				<div id="info_div_score">Score : <h2 class="score_value">0</h2></div>
+				<div id="info_div_record">Best : <h2 class="best_score_value">0</h2></div>
+				<div id="info_div_replay"><h2 class="replay_button">Replay</h2></div>
+			</div>
+			<div class="info_div_rules">
+				<a class="info_div_rules" href="#ex1" rel="modal:open" style="float:left">How to play ?</a
+			></div>
+			<div class="game_table"></div>
+			<div class="footer">
+				<p>Created and designed by Laura Baudean</p>
+			  </div>
+		</div>
+	</div>
+</body>
+</html>
